@@ -1,0 +1,18 @@
+{
+  "name": "@tothemungai/range",
+  "version": "0.0.2",
+  "author": "Brian Mungai <tothemungai@gmail.com>",
+  "description": "A JS implementation of Python's range()",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "@babel/preset-typescript": "^7.13.0",
+    "@types/jest": "^26.0.23",
+    "babel-jest": "^27.0.2",
+    "jest": "^27.0.3"
+  }
+}
