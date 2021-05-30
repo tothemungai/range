@@ -4,6 +4,8 @@
   "author": "Brian Mungai <tothemungai@gmail.com>",
   "description": "A JS implementation of Python's range()",
   "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "jest"
   },

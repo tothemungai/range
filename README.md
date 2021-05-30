@@ -16,6 +16,7 @@ A simple minimal JS implementation of Python's range()
 
 ```
 for(let i of range(1, 3)) console.log(i);
+
 //output
 1
 2
@@ -25,6 +26,7 @@ for(let i of range(1, 3)) console.log(i);
 
 ```
 [...range(1, 3, 1, {includeStart: true, includeEnd: true})]
+
 //produces
 [1, 2, 3]
 ```
@@ -33,6 +35,7 @@ for(let i of range(1, 3)) console.log(i);
 
 ```
 for(let i of range(0, 4, 2, {includeStart: true, includeEnd: true})) console.log(i);
+
 //output
 0
 2
