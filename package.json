@@ -1,6 +1,6 @@
 {
   "name": "@tothemungai/range",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Brian Mungai <tothemungai@gmail.com>",
   "description": "A JS implementation of Python's range()",
   "license": "MIT",
