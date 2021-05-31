@@ -16,6 +16,14 @@ function* range(
   if (typeof step !== "number")
     throw new TypeError(`'step' must be of type number, not ${typeof step}`);
 
+  options = {
+    //@ts-ignore
+    includeEnd: true,
+    //@ts-ignore
+    includeStart: true,
+    ...options,
+  };
+
   const actualStart = options.includeStart ? start : start + 1;
   const actualEnd = options.includeEnd ? end : end - 1;
 
