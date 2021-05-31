@@ -8,24 +8,18 @@ A simple minimal JS implementation of Python's range()
 
 `const range = require("@tothemungai/range");`
 
-### API
+## API
 
 `range(start: number, end: number, step: number, options?: {includeStart: boolean = true, includeEnd: boolean = true})`
 
 ## Simple iteration
 
 ```
-
 for(let i of range(1, 3)) console.log(i);
 
-
-
 //output
-
 1
-
 2
-
 3
 
 ```
@@ -33,17 +27,11 @@ for(let i of range(1, 3)) console.log(i);
 ## Iteration using steps
 
 ```
-
 for(let i of range(0, 4, 2)) console.log(i);
 
-
-
 //output
-
 0
-
 2
-
 4
 
 ```
@@ -54,10 +42,7 @@ for(let i of range(0, 4, 2)) console.log(i);
 
 [...range(1, 3)]
 
-
-
 //produces
-
 [1, 2, 3]
 
 ```
