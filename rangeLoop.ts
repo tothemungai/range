@@ -1,13 +1,13 @@
 interface RangeFunction {
-  includeStart: boolean;
-  includeEnd: boolean;
+  includeStart?: boolean;
+  includeEnd?: boolean;
 }
 
 function* range(
   start: number,
   end: number,
   step: number = 1,
-  options: RangeFunction = { includeEnd: true, includeStart: true }
+  options?: RangeFunction
 ): Generator<number> {
   if (typeof start !== "number")
     throw new TypeError(`'start' must be of type number, not ${typeof start}`);
@@ -16,16 +16,10 @@ function* range(
   if (typeof step !== "number")
     throw new TypeError(`'step' must be of type number, not ${typeof step}`);
 
-  options = {
-    //@ts-ignore
-    includeEnd: true,
-    //@ts-ignore
-    includeStart: true,
-    ...options,
-  };
+  const { includeStart = true, includeEnd = true } = options || {};
 
-  const actualStart = options.includeStart ? start : start + 1;
-  const actualEnd = options.includeEnd ? end : end - 1;
+  const actualStart = includeStart ? start : start + 1;
+  const actualEnd = includeEnd ? end : end - 1;
 
   for (let i = actualStart; i <= actualEnd; i = i + step) {
     yield i;

@@ -36,5 +36,6 @@ describe("Range loop", () => {
   });
   it("Should be callable with partial options", () => {
     expect([...rangeLoop(1, 3, 1, { includeEnd: false })]).toEqual([1, 2]);
+    expect([...rangeLoop(1, 3, 1, { includeStart: false })]).toEqual([2, 3]);
   });
 });
